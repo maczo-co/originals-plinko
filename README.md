@@ -16,7 +16,7 @@ stream, per `libs/provably_fair/fair.py`) lives ONCE in the shared engine
 | ⚖️ Published odds | <https://verify.maczo.co/originals/paytables/plinko.json> |
 | 🔧 Shared engine | <https://github.com/maczo-co/originals-verify> |
 
-- **Bias class:** `uniform` — uses a uniform Fisher-Yates / without-replacement draw — no modulo bias.
+- **Bias class:** `uniform` — maps words without a biased modulo reduction (bit extraction, or a uniform Fisher-Yates / without-replacement draw) — no modulo bias.
 - **Recipe:** for each of `rows` pegs one bit of the stream (u & 1) is right; bucket = count of rights; that bucket's multiplier pays.
 
 ## Files
